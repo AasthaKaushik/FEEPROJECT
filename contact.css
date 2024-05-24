@@ -1,0 +1,101 @@
+.contact {
+  margin-top: 50px;
+  padding: 20px;
+
+}
+
+.contact-form {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  animation: scaleFadeIn 0.5s ease;
+ 
+}
+.lg-heading{
+  font-family: 'Courier New', Courier, monospace;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  
+}
+.abhishek{
+  border: 2px solid black;
+  box-shadow: 5px 5px 20px grey; 
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus {
+  border-color: #007bff;
+}
+
+textarea {
+  height: 100px;
+}
+
+.form-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-btn:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-media-links {
+  font-size: 24px;
+}
+
+.social-media-links i {
+  margin: 0 10px;
+}
+
+.lg-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.text-gray {
+  color: #666;
+}
+
+@keyframes scaleFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

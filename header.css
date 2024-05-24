@@ -1,0 +1,143 @@
+/* Default styles */
+.header {
+    margin-top: 60px;
+  }
+  
+  .headersss {
+    font-size: 23px;
+  }
+  .abhi{
+    margin-top: 20px;
+    margin-left: 90px;
+    text-decoration: none;
+    /* margin-bottom: 2px; */
+  }
+  .headerTitles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'lora', 'serif';
+    color:black;
+    font-weight: 700;
+  }
+  
+  .headerTitleSm {
+    position: absolute;
+    top: 18%;
+    font-size: 20px;
+    font-family: cursive;
+    color:palevioletred;
+  }
+  
+  .headerTitleLg {
+    position: absolute;
+    top: 20%;
+    font-size: 60px;
+    font-weight: 700;
+    /* color: rgb(16, 137, 137); */
+    /* color: #8A3324; */
+    color: rgb(19, 102, 135);
+    /* font-family: "Lugrasimo", cursive; */
+    font-family:'Courier New', Courier, monospace;
+    margin-top: 20px;
+  }
+  
+  .headerImg {
+    width: 86%;
+    margin-left: 110px;
+    height: 490px;
+    margin-top: 169px;
+    object-fit: cover;
+    border: 2px solid gray;
+    box-shadow: 3px 3px 7px gray;
+    border-radius: 10px;
+    outline: 4px;
+    /* filter: blur(2px);
+    backdrop-filter: blur(5px);
+     */
+    /* object-fit: cove; */
+    /* background-image: url("Screenshot\ 2024-04-28\ 130907.png");
+    background-repeat: no-repeat;
+    margin-left: 200px;
+    width: 100%; */
+    /* image-rendering: url("Screenshot\ 2024-04-28\ 130907.png"); 
+    */
+    /* background-image: url("WhatsApp\ Image\ 2024-04-28\ at\ 1.29.44\ PM.jpeg");
+    background-repeat: no-repeat;
+    margin-left:300px;
+    width: 100vw;
+    border-radius: 5%  5%  5%  5%;
+    box-shadow: 2px solid black; */
+  }
+  .parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 500px; /* Adjust the height as needed */
+}
+
+.parallax-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://th.bing.com/th/id/OIP.JcgO1uI112PCRBEfwLrIwQHaFj?rs=1&pid=ImgDetMain'); /* Replace 'your-image.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    transform: translateZ(0);
+    z-index: -1;
+}
+
+.parallax-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Adjust the speed of the parallax effect by changing the 'background-position-y' property */
+.parallax-image {
+    background-position-y: calc(50% - 100px);
+}
+
+@media screen and (max-width: 768px) {
+    .parallax-image {
+        background-attachment: scroll;
+    }
+}
+
+  /* Media queries for responsiveness */
+  /* .headerImg:hover{
+    filter: blur(0px);
+    backdrop-filter: blur(1px);
+  } */
+  @media screen and (max-width: 768px) {
+    .headerTitleSm {
+      font-size: 16px;
+    }
+  
+    .headerTitleLg {
+      font-size: 70px;
+    }
+  
+    .headerImg {
+      height: 400px;
+      width: 100%;
+      margin-top: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .headerTitleSm {
+      font-size: 14px;
+    }
+  
+    .headerTitleLg {
+      font-size: 50px;
+    }
+  
+    .headerImg {
+      height: 300px;
+      margin-top: 70px;
+      width: 100%;
+    }
+  }
+  
